@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #45134F; /* Dark Amethyst - primary brand colour */
+    --secondary-color: #5B3A32; /* Cocoa brown - warm supporting colour */
+    --highlight-color: #8125A0; /* Royal Orchid - interactive accents */
+    --accent-color: #F47B35; /* Pumpkin spice - CTA */
+    --gold-color: #D6A044; /* Honey Bronze - small decorateive accents*/
+    --clay-color: #DEB46D; /*sunlit clay - soft highlights */
+    --background-color: #F6F0E8; /* ivory/linen - main background*/
+    --dark-color: #17131A; /* charcoal */
+    --white-color: #FFFFFF; /* white */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+h3, h6, p{
+    color: var(--background-color);
+}
+/* Navbar */
+#navbar {
+    background-color: var(--primary-color);
+}
+
+.content-text {
+    color: var(--background-color);
+}
+
+.content-text:hover {
+    color: var(--accent-color);
+}
+.logo {
+    width: 75px;
+    height: 30px;
+}
+/* header */
+/* main */
+/*  */
+
+/* footer styles */
+
+#contact {
+    background-color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.quick-links {
+    display: block;
+}
+/* media queries */
