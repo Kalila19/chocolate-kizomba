@@ -1,18 +1,32 @@
+/* colour palette */
+
 :root {
-    --primary-color: #45134F; /* Dark Amethyst - primary brand colour */
-    --secondary-color: #5B3A32; /* Cocoa brown - warm supporting colour */
-    --highlight-color: #8125A0; /* Royal Orchid - interactive accents */
-    --accent-color: #F47B35; /* Pumpkin spice - CTA */
-    --gold-color: #D6A044; /* Honey Bronze - small decorateive accents*/
-    --clay-color: #DEB46D; /*sunlit clay - soft highlights */
-    --background-color: #F6F0E8; /* ivory/linen - main background*/
-    --dark-color: #17131A; /* charcoal */
-    --white-color: #FFFFFF; /* white */
+    --primary-color: #45134f;    /* Dark Amethyst - primary brand colour */
+    --secondary-color: #5b3a32;  /* Cocoa Brown - warm supporting colour */
+    --highlight-color: #8125a0;  /* Royal Orchid - interactive accents */
+    --accent-color: #f47b35;     /* Pumpkin Spice - CTA */
+    --gold-color: #d6a044;       /* Honey Bronze - small decorative accents */
+    --clay-color: #deb46d;       /* Sunlit Clay - soft highlights */
+    --background-color: #f6f0e8; /* Ivory/Linen - main background */
+    --dark-color: #17131a;       /* Charcoal */
+    --white-color: #ffffff;      /* White */
 }
+
+/* General styles */
 
 body {
     background-color: var(--background-color);
     color: var(--secondary-color);
+}
+
+h3,
+h6,
+p {
+    color: var(--background-color);
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 .button {
@@ -20,11 +34,8 @@ body {
     color: var(--white-color);
 }
 
-h3, h6, p{
-    color: var(--background-color);
-}
-
 /* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
@@ -36,12 +47,13 @@ h3, h6, p{
 .content-text:hover {
     color: var(--accent-color);
 }
+
 .logo {
     width: 75px;
     height: 30px;
 }
 
-/* header styles */
+/* Header */
 
 /* hero wrapper - stretches to full width of the container */
 .hero {
@@ -49,7 +61,7 @@ h3, h6, p{
     width: 100%;
     height: 600px;
     overflow: hidden;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 /* hero image - fills the space without stretching/distorting */
@@ -83,27 +95,22 @@ h3, h6, p{
     padding: 0 16px;
 }
 
+/* Main */
 
+.card-shape {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 
-
-
-
-
-/* main */
-
-/*  */
-
-/* footer styles */
+/* Footer */
 
 #contact {
     background-color: var(--primary-color);
 }
 
-p {
-    margin-bottom: 5px;
-}
-
 .quick-links {
     display: block;
 }
-/* media queries */
+
+/*Media Queries */
