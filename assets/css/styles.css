@@ -119,6 +119,7 @@ p {
 
 @media screen and (min-width: 320px) {
 
+/* height and margin changed to accommodate the screen size */
     .hero {
     position: relative;
     width: 100%;
@@ -127,6 +128,7 @@ p {
     margin-bottom: 0px;
     }
 
+/* flexbox used to change the order of the carousel and text  */
     #carousel {
         display: flex;
         flex-direction: column;
@@ -135,10 +137,4 @@ p {
     #carousel .pictures {
         order: 1
     }
-
- #section-cards>div>div {
-
-    margin: 0px 0px 15px 3px;
-
- }   
 }
