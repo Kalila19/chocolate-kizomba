@@ -23,6 +23,7 @@ body {
 h3, h6, p{
     color: var(--background-color);
 }
+
 /* Navbar */
 #navbar {
     background-color: var(--primary-color);
@@ -39,8 +40,57 @@ h3, h6, p{
     width: 75px;
     height: 30px;
 }
-/* header */
+
+/* header styles */
+
+/* hero wrapper - stretches to full width of the container */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 50px; 
+}
+
+/* hero image - fills the space without stretching/distorting */
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* purple overlay - adjust the last number (0.55) for more/less see-through */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(69, 19, 79, 0.55); /* --primary-color #45134F */
+}
+
+/* text/buttons sit above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+    padding: 0 16px;
+}
+
+
+
+
+
+
+
 /* main */
+
 /*  */
 
 /* footer styles */
