@@ -25,6 +25,10 @@ p {
     color: var(--background-color);
 }
 
+h6 {
+    text-transform: uppercase;
+}
+
 p {
     margin-bottom: 5px;
 }
@@ -98,20 +102,20 @@ p {
 /* Main */
 
 .card-shape {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
 }
 
 /* Footer */
 
 #contact {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
+
 }
 
-.quick-links {
-    display: block;
-}
+
+
 
 /*Media Queries */
 
@@ -137,4 +141,19 @@ p {
     #carousel .pictures {
         order: 1
     }
+
+    /* footer */
+    /* flexbox set up to arrange the links in a line*/
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    justify-content: center;
+    
+}
+
+body {
+    font-size: 0.8rem;
+} 
+    
 }
