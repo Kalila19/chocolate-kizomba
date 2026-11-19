@@ -44,7 +44,7 @@
 
     <!-- navbar (with dropdown for one of the links) -->
     <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="assets\images\orange-logo.png"
@@ -130,7 +130,7 @@
       <!-- carousel + free class sign-up -->
       <section id="carousel">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 pictures">
             <div
               id="carouselExampleAutoplaying"
               class="carousel slide"
@@ -207,42 +207,37 @@
             </div>
           </div>
 
-          <div class="col-6 text-center">
+          <div class="col-12 text-center">
             <h2>Community ● Connection ● Culture</h2>
-            <p style="color: var(--secondary-color)">
+            <p style="color: var(--secondary-color)" class="my-4">
               These are at the heart of Chocolate Kizomba.<br />
               Ready to take the next step and be part of the community?<br />
               Sign up to our mailing list for a free class, plus updates on
               events, workshops, and community news.
             </p>
 
-            <form action="#" method="GET">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <label for="name" class="form-label"></label>
+            <form action="#" method="POST">
+                  <label for="email" class="form-label visually-hidden">Email Address</label>
                   <input
                     class="form-control"
-                    id="name"
-                    name="name"
-                    type="text"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email address"
                     required
                   />
-                </div>
-                <div class="col-12 text-center">
                   <button type="submit" class="btn button mt-3">
                     Sign up for a free class
                   </button>
-                </div>
+              </form>
               </div>
-            </form>
-          </div>
         </div>
       </section>
 
       <!-- reasons to join cards -->
       <section id="section-cards">
-        <div class="row">
-          <h3>Reasons to join Chocolate Kizomba</h3>
+        <div class="row my-5">
+          <h3 style="color: var(--secondary-color)" class="text-center">Why dance with us?</h3>
 
           <div class="col-3">
             <div class="card text-center" style="width: 18rem">
@@ -287,7 +282,7 @@
                 alt="Couple Dancing"
               />
               <div class="card-body">
-                <h5 class="card-title"></h5>
+                <h5 class="card-title">Great music</h5>
                 <p class="card-text">
                   Dance your heart out to Lusophone sounds carefully curated
                   from the best DJs in London, that your body and your soul.
@@ -312,14 +307,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="">
-        <div class="row">
-          <div class="col-4">Card 1</div>
-          <div class="col-4">Card 2</div>
-          <div class="col-4">Card 3</div>
         </div>
       </section>
     </main>
