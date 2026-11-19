@@ -110,11 +110,21 @@ p {
 /* Footer */
 
 #contact {
-    background-color: var(--background-color);
-
+    background-color: var(--primary-color);
 }
 
+#contact a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+#contact a:hover {
+    color: var(--accent-color);
+    
+}
 
+address {
+    color: var(--background-color);
+}
 
 
 /*Media Queries */
