@@ -135,4 +135,10 @@ p {
     #carousel .pictures {
         order: 1
     }
+
+ #section-cards>div>div {
+
+    margin: 0px 0px 15px 3px;
+
+ }   
 }
