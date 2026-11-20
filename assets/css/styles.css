@@ -19,6 +19,10 @@ body {
     color: var(--secondary-color);
 }
 
+h1, h2, h3 {
+    font-weight: 650;
+}
+
 h3,
 h6,
 p {
@@ -114,6 +118,13 @@ p {
     color: var(--secondary-color);
 }
 
+#section-cards .card {
+    border-radius: 0;
+}
+
+#section-cards .card-body {
+    padding: 0.5rem
+}
 /* Footer */
 
 #contact {
@@ -164,10 +175,6 @@ address {
     
 }
 
-body {
-    font-size: 0.8rem;
-} 
-
  /* smaller sign-up button and sharp edges */
     #carousel .button {
         padding: 0.25rem 0.75rem;
@@ -209,4 +216,23 @@ body {
 
 }
 
-   
+
+/* large screens and above >= 992px */
+@media screen and (min-width: 992px) {
+
+    /* smaller card images to fit four cards in a row */
+    .card-shape {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* extra large screens and above >= 1200px */
+@media screen and (min-width: 1200px) {
+
+    /* cards are wider, so the images can go back to full size */
+    .card-shape {
+        width: 160px;
+        height: 160px;
+    }
+}
