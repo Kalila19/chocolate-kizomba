@@ -215,8 +215,11 @@ address {
         font-size: 1.8rem;
     }
 
-   
-
+    /* stack the footer links vertically */
+    .quick-links {
+        flex-direction: column;
+        gap: 4px;
+    }
 }
 
 
@@ -227,12 +230,6 @@ address {
     .card-shape {
         width: 140px;
         height: 140px;
-    }
-
-    /* stack the footer links vertically */
-    .quick-links {
-        flex-direction: column;
-        gap: 4px;
     }
 }
 
