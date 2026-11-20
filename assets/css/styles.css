@@ -124,8 +124,8 @@ p {
 }
 
 #main p,
-#main h3,
-#main h5 {
+#main h2,
+#main h3 {
     color: var(--secondary-color);
 }
 
@@ -217,17 +217,12 @@ address {
         object-fit: cover;
     }
 
-    #carousel h2 {
-        font-size: 1.8rem;
-    }
-
     /* stack the footer links vertically */
     .quick-links {
         flex-direction: column;
         gap: 4px;
     }
 }
-
 
 /* large screens and above >= 992px */
 @media screen and (min-width: 992px) {
