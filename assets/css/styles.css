@@ -225,6 +225,11 @@ address {
         width: 140px;
         height: 140px;
     }
+
+    /* left-align the footer links to match the text-lg-start columns */
+    .quick-links {
+        justify-content: flex-start;
+    }
 }
 
 /* extra large screens and above >= 1200px */

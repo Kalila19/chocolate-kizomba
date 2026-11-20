@@ -315,8 +315,8 @@
     <!-- footer / contact section -->
     <footer id="contact" class="mt-auto py-3">
       <div class="container-lg">
-        <div class="row text-center">
-          <div class="col-12">
+        <div class="row text-center text-lg-start">
+          <div class="col-12 col-lg-4">
             <h6 class="mb-3">Get in touch</h6>
             <p>
               <i class="fa-solid fa-envelope"></i>
@@ -332,8 +332,8 @@
             </address>
           </div>
 
-          <div class="col-12">
-            <h6>Quick links</h6>
+          <div class="col-12 col-lg-4">
+            <h6 class="mb-3">Quick links</h6>
             <div class="quick-links">
             <a href="#">FAQs</a>
             <a href="#">Classes</a>
@@ -342,10 +342,10 @@
             </div>
         </div>
           
-<!-- subscribe input is hidden by default on mobile screens with d-none -->
-          <div class="col-12 d-none">
+          <!-- subscribe form: hidden on mobile/tablet (d-none), shown from 992px (d-lg-block) -->
+          <div class="col-12 col-lg-4 d-none d-lg-block">
             <h6>Subscribe to the mailing list</h6>
-            <div class="input-group my-4">
+            <div class="input-group mt-3">
               <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
               <input
                 type="email"
