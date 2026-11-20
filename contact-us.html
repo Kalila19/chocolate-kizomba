@@ -36,7 +36,7 @@
     <!-- CSS code -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Contact Us</title>
+    <title>Chocolate Kizomba | Contact Us</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -66,16 +66,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
+              <a class="nav-link nav-bar-link" href="index.html">
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-text" href="#">About us</a>
+              <a class="nav-link nav-bar-link" href="#">About us</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text content-text"
+                class="nav-link dropdown-toggle text nav-bar-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -85,27 +85,71 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item content-text" href="#">Classes</a>
+                  <a class="dropdown-item nav-bar-link" href="#">Classes</a>
                 </li>
                 <li>
-                  <a class="dropdown-item content-text" href="#">Workshops</a>
+                  <a class="dropdown-item nav-bar-link" href="#">Workshops</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-text" href="#">Events</a>
+              <a class="nav-link nav-bar-link" href="#">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-text" href="#">Gallery</a>
+              <a class="nav-link nav-bar-link" href="#">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link content-text" href="#">Contact us</a>
+              <a class="nav-link active" aria-current="page" href="contact-us.html">Contact us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
+    <main>
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+        <section id="contact-form" class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <h2>Send us a message</h2>
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input class="form-control" id="name" name="name"type="text" required>
+                        </div>
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input class="form-control" id="email" name="email" type="email" required>
+                        </div>
+                       
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="subject-type" class="form-label">Subject</label>
+                            <select id="subject-type" class="form-select form-control" name="subject-type" required>
+                                <option value="" selected>Select</option>
+                                <option value="general-enquiry">General enquiry</option>
+                                <option value="ticket-bookings">Tickets & bookings</option>
+                                <option value="birthday-celebration">Birthday or celebration</option>
+                                <option value="event-feedback">Event feedback</option>
+                                <option value="venue-accessibility">Veue & accessibility</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn button mb-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
 
 
 
