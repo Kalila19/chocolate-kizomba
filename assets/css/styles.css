@@ -229,9 +229,10 @@ address {
         height: 140px;
     }
 
-    /* left-align the footer links to match the text-lg-start columns */
+    /* stack the footer links vertically */
     .quick-links {
-        justify-content: flex-start;
+        flex-direction: column;
+        gap: 4px;
     }
 }
 
