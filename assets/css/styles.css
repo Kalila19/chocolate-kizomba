@@ -107,6 +107,12 @@ p {
     object-fit: cover;
 }
 
+#main p,
+#main h3,
+#main h5 {
+    color: var(--secondary-color);
+}
+
 /* Footer */
 
 #contact {
