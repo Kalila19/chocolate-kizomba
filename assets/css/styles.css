@@ -73,6 +73,15 @@ p {
     height: 30px;
 }
 
+/* current page in the navbar */
+#navbar .nav-link.active,
+#navbar .dropdown-item.active {
+    color: var(--clay-color);
+    background-color: transparent;
+    font-weight: 600;
+}
+
+
 /* Header */
 
 /* hero wrapper - stretches to full width of the container */
