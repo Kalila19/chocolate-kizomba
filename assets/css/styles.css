@@ -172,6 +172,12 @@ address {
     margin-bottom: 0px;
     }
 
+/* contact page hero - shorter than the home page */
+
+.hero-contact {
+    height: 250px;
+}
+
 /* flexbox used to change the order of the carousel and text  */
 
     #carousel .pictures {
