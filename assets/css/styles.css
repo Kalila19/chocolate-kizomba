@@ -139,7 +139,11 @@ p {
 /* classes flyer image */
 
 .flyer {
-    height: 50%;
+    display: block;
+    width: 100%;        /* fill the column */
+    max-width: 450px;   /* but don't get too large on big screens */
+    height: auto;       /* keep its proportions */
+    margin: 0 auto;     /* center it in the column */
 }
 /* Footer */
 
