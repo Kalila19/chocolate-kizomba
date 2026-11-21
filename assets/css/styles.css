@@ -135,6 +135,12 @@ p {
 #section-cards .card-body {
   padding: 0.5rem;
 }
+
+/* classes flyer image */
+
+.flyer {
+    height: 50%;
+}
 /* Footer */
 
 #contact {
@@ -149,6 +155,8 @@ p {
 #contact a:hover {
   color: var(--accent-color);
 }
+
+
 
 /*Media Queries */
 
@@ -239,6 +247,10 @@ p {
   .hero-classes {
     height: 190px;
   }
+
+ .classes {
+    font-size: 0.8rem;
+ } 
 }
 
 /* large screens and above >= 992px */
