@@ -23,12 +23,6 @@ h1, h2, h3 {
     font-weight: 650;
 }
 
-h3,
-h6,
-p {
-    color: var(--background-color);
-}
-
 h6 {
     text-transform: uppercase;
 }
@@ -45,7 +39,7 @@ p {
 
 .button:hover {
     background-color: var(--highlight-color);
-    border: 2px solid var(var(--highlight-color));
+    border: 2px solid var(--highlight-color);
     color: var(--background-color);
 }
 
@@ -132,15 +126,9 @@ p {
     object-fit: cover;
 }
 
-#main p,
-#main h2,
-#main h3,
-#connect address {
-    color: var(--secondary-color);
-}
-
 #section-cards .card {
     border-radius: 0;
+    color: inherit; /* use the body's Cocoa Brown instead of Bootstrap's default card text colour */
 }
 
 #section-cards .card-body {
@@ -150,6 +138,7 @@ p {
 
 #contact {
     background-color: var(--primary-color);
+    color: var(--background-color); /* all footer text inherits Ivory */
 }
 
 #contact a {
@@ -158,11 +147,6 @@ p {
 }
 #contact a:hover {
     color: var(--accent-color);
-    
-}
-
-address {
-    color: var(--background-color);
 }
 
 
