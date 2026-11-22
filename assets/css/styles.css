@@ -127,12 +127,14 @@ p {
   object-fit: cover;
 }
 
-#section-cards .card {
+#section-cards .card,
+#instructors .card {
   border-radius: 0;
   color: inherit; /* use the body's Cocoa Brown instead of Bootstrap's default card text colour */
 }
 
-#section-cards .card-body {
+#section-cards .card-body,
+#instructors .card-body {
   padding: 0.5rem;
 }
 
@@ -224,7 +226,8 @@ p {
   }
 
   /* make the cards the same height irrespective of text */
-  #section-cards .card {
+  #section-cards .card,
+  #instructors .card {
     height: 100%;
   }
 
