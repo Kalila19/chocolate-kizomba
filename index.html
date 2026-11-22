@@ -242,7 +242,33 @@
               about upcoming classes, events, workshops, and more.
             </p>
 
-            <form action="success.html" method="POST">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="mt-3"
+            >
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="2299e9ff-4655-4be5-8722-56e57706e4c4"
+              />
+
+              <!-- Optional: Customise the email subject line you receive -->
+              <input
+                type="hidden"
+                name="subject"
+                value="Subscription from Chocolate Kizomba Website"
+              />
+              <!-- redirect to success page -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://kalila19.github.io/chocolate-kizomba/success.html"
+              />
+
+              <!-- Single Email Input -->
+
               <label for="email" class="form-label visually-hidden"
                 >Email Address</label
               >
