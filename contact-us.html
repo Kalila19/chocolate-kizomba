@@ -335,17 +335,21 @@
           <!-- subscribe form: hidden on mobile/tablet (d-none), shown from 992px (d-lg-block) -->
           <div class="col-12 col-lg-4 d-none d-lg-block">
             <h6>Subscribe to the mailing list</h6>
-            <div class="input-group mt-3">
-              <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                aria-label="Email"
-                aria-describedby="basic-addon1"
-              />
-              <button type="button" class="btn button btn-sm">Subscribe</button>
-            </div>
+            <form action="#" method="POST" class="mt-3">
+              <label for="footer-email" class="visually-hidden">Email address</label>
+              <div class="input-group">
+                <input
+                  type="email"
+                  id="footer-email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email address"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit" class="btn button btn-sm">Subscribe</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
