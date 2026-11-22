@@ -17,6 +17,8 @@
 body {
   background-color: var(--background-color);
   color: var(--secondary-color);
+  padding-top: 59.2px;
+  /* padding-top added as the fixed nav bar overlaps the hero image in the header */
 }
 
 h1,
