@@ -159,6 +159,12 @@
                 name="from_name"
                 value="Chocolate Kizomba website"
               />
+              <!-- after sending, show our own thank-you page (must be the full live URL) -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://kalila19.github.io/chocolate-kizomba/success.html"
+              />
 
               <!-- spam protection: hidden from people, bots fill it in -->
               <input
@@ -177,6 +183,7 @@
                     id="name"
                     name="name"
                     type="text"
+                    autocomplete="name"
                     required
                   />
                 </div>
@@ -187,6 +194,7 @@
                     id="email"
                     name="email"
                     type="email"
+                    autocomplete="email"
                     required
                   />
                 </div>
@@ -195,7 +203,7 @@
                   <label for="subject-type" class="form-label">Subject</label>
                   <select
                     id="subject-type"
-                    class="form-select form-control"
+                    class="form-select"
                     name="subject-type"
                     required
                   >
@@ -226,7 +234,10 @@
                   ></textarea>
                 </div>
               </div>
-              <div class="text-center text-md-start">
+              <p class="small">
+                We'll only use your details to reply to your message.
+              </p>
+              <div class="text-center text-md-start mt-3">
                 <button type="submit" class="btn button mb-3">Submit</button>
               </div>
             </form>
@@ -312,7 +323,8 @@
 
             <address class="mb-2">
               <i class="fa-solid fa-location-dot"></i>
-              <strong>Be At One (Ground Floor) - Regent Street, 10 Beak St, London, W1F 9RA</strong>
+              <strong>Be At One (Ground Floor) - Regent Street<br>
+              10 Beak St, London, W1F 9RA</strong>
             </address>
 
             <!-- social links -->
@@ -378,6 +390,7 @@
                 />
                 <button type="submit" class="btn button btn-sm">Subscribe</button>
               </div>
+              <p class="mt-2 mb-0"><em>Unsubscribe anytime.</em></p>
             </form>
           </div>
         </div>
