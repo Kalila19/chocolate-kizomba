@@ -153,20 +153,20 @@ The site is built mobile-first with Bootstrap's grid, with layout changes at 768
 
 ## Testing
 
-> To be completed. Record each result here as it's done.
+> Rows left blank are still to be tested.
 
 ### Validators
 
 | Page | W3C HTML validator | Result |
 |---|---|---|
-| index.html | | |
-| classes.html | | |
-| contact-us.html | | |
-| success.html | | |
+| index.html | 0 errors, 0 warnings | Pass |
+| classes.html | 0 errors, 0 warnings | Pass |
+| contact-us.html | 0 errors, 0 warnings (after removing `autocomplete` from the hidden spam-check checkbox, which isn't allowed on checkboxes) | Pass |
+| success.html | 0 errors, 0 warnings | Pass |
 
 | File | W3C CSS validator | Result |
 |---|---|---|
-| styles.css | | |
+| styles.css | 0 errors. 3 standard notices: the Google Fonts `@import` isn't checked, and CSS variables aren't checked | Pass |
 
 ### Lighthouse
 
@@ -178,23 +178,25 @@ The site is built mobile-first with Bootstrap's grid, with layout changes at 768
 
 ### Responsiveness
 
-Checked at 320, 375, 576, 768, 992, 1200 and 1400px wide.
+Checked with screenshots in Microsoft Edge. Still to check by hand in DevTools: 375, 576, 992 and 1400px.
 
-| Page | Result |
-|---|---|
-| index.html | |
-| classes.html | |
-| contact-us.html | |
-| success.html | |
+| Page | 320px | 768px | 1200px | Notes |
+|---|---|---|---|---|
+| index.html | Pass | Pass | Pass | Cards: 1, then 2, then 4 per row. Carousel and sign-up stack on mobile, side by side from 768px |
+| classes.html | Pass | Pass | Not yet | Hero grows to fit its text on mobile. Details switch to label/value pairs from 576px |
+| contact-us.html | Pass | Not yet | Pass | Form, then Connect / Opening Hours / Find us in three columns from 768px |
+| success.html | Pass | Pass | Not yet | Message shows above the photo on mobile, beside it from 768px |
+
+No page scrolls sideways at 320px.
 
 ### Manual testing
 
 | Test | Expected result | Result |
 |---|---|---|
-| Navbar links | Each link opens the right page | |
+| Navbar links | Each link opens the right page | Pass (every local link and image checked with a script; About us, Workshops, Events and Gallery are planned placeholders) |
 | Mobile menu | Opens, dropdown works, closes | |
-| Footer quick links | Open the right section of the Classes page | |
-| Social links | Open in a new tab | |
+| Footer quick links | Open the right section of the Classes page | Pass (`#faqs`, `#instructors` and `#classes` all exist) |
+| Social links | Open in a new tab | WhatsApp, Instagram, TikTok, Google Maps and Afromoya all respond. Facebook blocks automated checks, so test it by hand |
 | Contact form, empty submit | Browser asks for the missing fields | |
 | Contact form, invalid email | Browser asks for a valid email | |
 | Contact form, real message | Email arrives and success.html is shown | |
