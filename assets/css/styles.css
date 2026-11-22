@@ -221,6 +221,11 @@ p {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
   }
+
+  /* success page - show the image below the thank you message on mobile */
+  #success .image {
+    order: 1;
+  }
 }
 /* medium screens and above >= 768px */
 @media screen and (min-width: 768px) {
@@ -253,6 +258,7 @@ p {
     gap: 4px;
   }
 
+  /* amend hero image height for classes and contact us page */
   .hero-contact,
   .hero-classes {
     height: 190px;
@@ -261,7 +267,14 @@ p {
  .classes {
     font-size: 0.8rem;
  } 
+
+  /* success page - image back on the left of the thank you message */
+  #success .image {
+    order: 0;
+  }
 }
+
+
 
 /* large screens and above >= 992px */
 @media screen and (min-width: 992px) {
