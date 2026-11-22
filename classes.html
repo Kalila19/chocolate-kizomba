@@ -46,7 +46,11 @@
     <!-- flex box container for the columns -->
 
     <!-- navbar (with dropdown for one of the links) -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -128,9 +132,9 @@
           <h1 class="display-3 fw-bold">Classes</h1>
           <p>
             From absolute beginners, improvers to advanced, we have the perfect
-            class for your dance journey whatever the level. <br> Join our vibrant
-            Kizomba community every Tuesday night in Soho, London and dance the
-            night away.
+            class for your dance journey whatever the level. <br />
+            Join our vibrant Kizomba community every Tuesday night in Soho,
+            London and dance the night away.
           </p>
         </div>
       </div>
@@ -288,9 +292,10 @@
               <p>
                 No, you're welcome to come on your own or with friends. If
                 you're coming solo, say hello when you arrive and we will help
-                you get settled.<br> We usually rotate partners during class, so you
-                will meet new people. You can also bring your partner and dance
-                with them solely if you feel more comfortable.
+                you get settled.<br />
+                We usually rotate partners during class, so you will meet new
+                people. You can also bring your partner and dance with them
+                solely if you feel more comfortable.
               </p>
             </details>
 
@@ -354,14 +359,18 @@
             <h2 class="h6 mb-3">Get in touch</h2>
             <p>
               <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:chocolatekizomba1@gmail.com">chocolatekizomba1@gmail.com</a>
+              <a href="mailto:chocolatekizomba1@gmail.com"
+                >chocolatekizomba1@gmail.com</a
+              >
             </p>
             <p><i class="fa-solid fa-phone"></i> 0123 456 789</p>
 
             <address class="mb-2">
               <i class="fa-solid fa-location-dot"></i>
-              <strong>Be At One (Ground Floor) - Regent Street<br>
-                10 Beak St, London, W1F 9RA</strong>
+              <strong
+                >Be At One (Ground Floor) - Regent Street<br />
+                10 Beak St, London, W1F 9RA</strong
+              >
             </address>
 
             <!-- social links -->
@@ -413,8 +422,36 @@
           <!-- subscribe form: hidden on mobile/tablet (d-none), shown from 992px (d-lg-block) -->
           <div class="col-12 col-lg-4 d-none d-lg-block">
             <h2 class="h6">Subscribe to the mailing list</h2>
-            <form action="#" method="POST" class="mt-3">
-              <label for="footer-email" class="visually-hidden">Email address</label>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="mt-3"
+            >
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="2299e9ff-4655-4be5-8722-56e57706e4c4"
+              />
+
+              <!-- Optional: Customise the email subject line you receive -->
+              <input
+                type="hidden"
+                name="subject"
+                value="Subscription from Chocolate Kizomba Website"
+              />
+              <!-- redirect to success page -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://kalila19.github.io/chocolate-kizomba/success.html"
+              />
+
+              <!-- Single Email Input -->
+
+              <label for="footer-email" class="visually-hidden"
+                >Email address</label
+              >
               <div class="input-group">
                 <input
                   type="email"
@@ -425,7 +462,9 @@
                   autocomplete="email"
                   required
                 />
-                <button type="submit" class="btn button btn-sm">Subscribe</button>
+                <button type="submit" class="btn button btn-sm">
+                  Subscribe
+                </button>
               </div>
               <p class="mt-2 mb-0"><em>Unsubscribe anytime.</em></p>
             </form>

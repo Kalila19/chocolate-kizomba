@@ -42,11 +42,14 @@
     <title>Home | Chocolate Kizomba</title>
   </head>
 
- <!-- flex box container for the columns -->
+  <!-- flex box container for the columns -->
   <body class="d-flex flex-column min-vh-100 fade-in">
-
     <!-- navbar (with dropdown for one of the links) -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -239,7 +242,7 @@
               about upcoming classes, events, workshops, and more.
             </p>
 
-            <form action="#" method="POST">
+            <form action="success.html" method="POST">
               <label for="email" class="form-label visually-hidden"
                 >Email Address</label
               >
@@ -256,7 +259,10 @@
                 Sign up for a free class
               </button>
               <p class="small mt-2">
-                <em>We'll email you about classes and events. Unsubscribe anytime.</em>
+                <em
+                  >We'll email you about classes and events. Unsubscribe
+                  anytime.</em
+                >
               </p>
             </form>
           </div>
@@ -359,14 +365,18 @@
             <h2 class="h6 mb-3">Get in touch</h2>
             <p>
               <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:chocolatekizomba1@gmail.com">chocolatekizomba1@gmail.com</a>
+              <a href="mailto:chocolatekizomba1@gmail.com"
+                >chocolatekizomba1@gmail.com</a
+              >
             </p>
             <p><i class="fa-solid fa-phone"></i> 0123 456 789</p>
 
             <address class="mb-2">
               <i class="fa-solid fa-location-dot"></i>
-              <strong>Be At One (Ground Floor) - Regent Street <br> 
-              10 Beak St, London, W1F 9RA</strong>
+              <strong
+                >Be At One (Ground Floor) - Regent Street <br />
+                10 Beak St, London, W1F 9RA</strong
+              >
             </address>
 
             <!-- social links -->
@@ -418,8 +428,37 @@
           <!-- subscribe form: hidden on mobile/tablet (d-none), shown from 992px (d-lg-block) -->
           <div class="col-12 col-lg-4 d-none d-lg-block">
             <h2 class="h6">Subscribe to the mailing list</h2>
-            <form action="#" method="POST" class="mt-3">
-              <label for="footer-email" class="visually-hidden">Email address</label>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="mt-3"
+            >
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="2299e9ff-4655-4be5-8722-56e57706e4c4"
+              />
+
+              <!-- Optional: Customise the email subject line you receive -->
+              <input
+                type="hidden"
+                name="subject"
+                value="Subscription from Chocolate Kizomba Website"
+              />
+              <!-- redirect to success page -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://kalila19.github.io/chocolate-kizomba/success.html"
+              />
+
+              <!-- Single Email Input -->
+
+              <label for="footer-email" class="visually-hidden"
+                >Email address</label
+              >
               <div class="input-group">
                 <input
                   type="email"
@@ -430,7 +469,9 @@
                   autocomplete="email"
                   required
                 />
-                <button type="submit" class="btn button btn-sm">Subscribe</button>
+                <button type="submit" class="btn button btn-sm">
+                  Subscribe
+                </button>
               </div>
               <p class="mt-2 mb-0"><em>Unsubscribe anytime.</em></p>
             </form>
