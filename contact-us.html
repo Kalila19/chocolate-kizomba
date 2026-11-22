@@ -86,7 +86,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item nav-bar-link" href="classes.html">Classes</a>
+                  <a class="dropdown-item nav-bar-link" href="classes.html"
+                    >Classes</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item nav-bar-link" href="#">Workshops</a>
@@ -140,7 +142,33 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-8">
             <h2>Send us a message</h2>
-            <form action="#" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms settings -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="2299e9ff-4655-4be5-8722-56e57706e4c4"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New message from the Chocolate Kizomba website"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Chocolate Kizomba website"
+              />
+
+              <!-- spam protection: hidden from people, bots fill it in -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="d-none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
               <div class="row">
                 <div class="col-12 col-lg-6 mb-3">
                   <label for="name" class="form-label">Name</label>
@@ -216,7 +244,11 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-brands fa-whatsapp" aria-hidden="true" aria-label="Join our Whatsapp group (opens in a new tab)"></i> 
+              <i
+                class="fa-brands fa-whatsapp"
+                aria-hidden="true"
+                aria-label="Join our Whatsapp group (opens in a new tab)"
+              ></i>
               Join the Whatsapp Group
             </a>
             <a
@@ -252,7 +284,8 @@
           <address class="mb-3">
             <i class="fa-solid fa-location-dot"></i>
             <strong
-              >Be At One (Ground Floor) - Regent Street 10 Beak St, London, W1F 9RA</strong
+              >Be At One (Ground Floor) - Regent Street 10 Beak St, London, W1F
+              9RA</strong
             >
           </address>
           <a
