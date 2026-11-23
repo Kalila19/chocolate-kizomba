@@ -1,6 +1,6 @@
 # Chocolate Kizomba
 
-Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be At One, Regent Street, in Soho, London. This website introduces the night to new dancers, explains the classes and prices, and gives people an easy way to book, sign up for a free class or get in touch.
+Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be At One, Regent Street, in Soho, London. This website has been created as part of the  This website introduces the night to new dancers, explains the classes and prices, and gives people an easy way to book classes, sign up for a free class or get in touch.
 
 **Live site:** [kalila19.github.io/chocolate-kizomba](https://kalila19.github.io/chocolate-kizomba/)
 
@@ -83,6 +83,12 @@ Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be
 - Confirms the free class is on its way, with a link back to the home page
 - Hidden from search engines with `noindex`
 
+### Under construction (`under-construction.html`)
+
+- Placeholder page for sections that aren't built yet: About us, Workshops, Events and Gallery all link here from the navbar
+- Tells visitors the page is on its way, with a link back to the home page
+- Hidden from search engines with `noindex`
+
 ---
 
 ## Future features
@@ -95,7 +101,7 @@ Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be
 - **Instructor bios and photos** on the Classes page
 - **Privacy policy page**, linked from the sign-up forms
 
-The About us, Workshops, Events and Gallery links already appear in the navbar as placeholders (`href="#"`) to show the planned site structure.
+The About us, Workshops, Events and Gallery links already appear in the navbar to show the planned site structure. Until those pages are built, they open the under construction page.
 
 ---
 
@@ -172,6 +178,7 @@ The site is built mobile-first with Bootstrap's grid, with layout changes at 768
 | contact-us.html | 0 errors, 0 warnings (after removing `autocomplete` from the hidden spam-check checkbox, which isn't allowed on checkboxes) | Pass |
 | success.html | 0 errors, 0 warnings | Pass |
 | thank-you.html | | |
+| under-construction.html | | |
 
 | File | W3C CSS validator | Result |
 |---|---|---|
@@ -196,6 +203,7 @@ Checked with screenshots in Microsoft Edge. Still to check by hand in DevTools: 
 | contact-us.html | Pass | Not yet | Pass | Form, then Connect / Opening Hours / Find us in three columns from 768px |
 | success.html | Pass | Pass | Not yet | Message shows above the photo on mobile, beside it from 768px |
 | thank-you.html | | | | Same layout as success.html |
+| under-construction.html | | | | |
 
 No page scrolls sideways at 320px.
 
@@ -203,7 +211,8 @@ No page scrolls sideways at 320px.
 
 | Test | Expected result | Result |
 |---|---|---|
-| Navbar links | Each link opens the right page | Pass (every local link and image checked with a script; About us, Workshops, Events and Gallery are planned placeholders) |
+| Navbar links | Each link opens the right page | Pass (every local link and image checked with a script) |
+| Placeholder links (About us, Workshops, Events, Gallery) | Open the under construction page | |
 | Mobile menu | Opens, dropdown works, closes | |
 | Footer quick links | Open the right section of the Classes page | Pass (`#faqs`, `#instructors` and `#classes` all exist) |
 | Social links | Open in a new tab | WhatsApp, Instagram, TikTok, Google Maps and Afromoya all respond. Facebook blocks automated checks, so test it by hand |
