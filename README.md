@@ -244,6 +244,7 @@ Chrome, Firefox, Safari (including iOS) and Edge.
 | Images used backslashes in their paths, which break on web servers | Changed every path to forward slashes |
 | Large images (up to 6MB each) slowed the pages | Resized and compressed every image (106MB down to about 8MB) |
 | JPG photos and PNG logos were larger than they needed to be | Converted them to WebP (the three logos went from 295KB to 121KB) |
+| Some photos looked blurry after the WebP conversion (carousel images 1, 9, 10 and 22, the classes hero, the success and thank-you photo, two card images and the flyer). They had been saved at as little as 270px wide, so the browser was stretching them | Rebuilt them as WebP from the full-size originals (1080px wide, and 1240px for the flyer) |
 
 ---
 
