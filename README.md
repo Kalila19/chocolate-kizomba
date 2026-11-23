@@ -77,6 +77,12 @@ Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be
 - Thank-you page shown after the contact form is submitted, with a link back to the home page
 - Hidden from search engines with `noindex`
 
+### Signed up (`thank-you.html`)
+
+- Thank-you page shown after someone joins the mailing list, from either the free-class sign-up on the home page or the footer sign-up on any page
+- Confirms the free class is on its way, with a link back to the home page
+- Hidden from search engines with `noindex`
+
 ---
 
 ## Future features
@@ -85,7 +91,7 @@ Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be
 - **Workshops page:** upcoming workshops with booking links (under "Learn to dance")
 - **Events page:** calendar of socials and special events
 - **Gallery page:** photos and videos from past nights
-- **Mailing list:** connect the free-class and footer sign-up forms to Mailjet
+- **Mailing list:** move the free-class and footer sign-up forms from Web3Forms to Mailjet, so subscribers go straight onto a mailing list instead of arriving as emails
 - **Instructor bios and photos** on the Classes page
 - **Privacy policy page**, linked from the sign-up forms
 
@@ -144,7 +150,7 @@ The site is built mobile-first with Bootstrap's grid, with layout changes at 768
 - [Bootstrap 5.3](https://getbootstrap.com/): grid, navbar, carousel, cards and forms
 - [Font Awesome](https://fontawesome.com/): icons
 - [Google Fonts](https://fonts.google.com/): Montserrat and Poppins
-- [Web3Forms](https://web3forms.com/): sends contact form messages to email
+- [Web3Forms](https://web3forms.com/): sends contact form messages and mailing list sign-ups to email
 - [favicon.io](https://favicon.io/): favicons
 - Git, GitHub and GitHub Pages: version control and hosting
 - Visual Studio Code
@@ -163,6 +169,7 @@ The site is built mobile-first with Bootstrap's grid, with layout changes at 768
 | classes.html | 0 errors, 0 warnings | Pass |
 | contact-us.html | 0 errors, 0 warnings (after removing `autocomplete` from the hidden spam-check checkbox, which isn't allowed on checkboxes) | Pass |
 | success.html | 0 errors, 0 warnings | Pass |
+| thank-you.html | | |
 
 | File | W3C CSS validator | Result |
 |---|---|---|
@@ -186,6 +193,7 @@ Checked with screenshots in Microsoft Edge. Still to check by hand in DevTools: 
 | classes.html | Pass | Pass | Not yet | Hero grows to fit its text on mobile. Details switch to label/value pairs from 576px |
 | contact-us.html | Pass | Not yet | Pass | Form, then Connect / Opening Hours / Find us in three columns from 768px |
 | success.html | Pass | Pass | Not yet | Message shows above the photo on mobile, beside it from 768px |
+| thank-you.html | | | | Same layout as success.html |
 
 No page scrolls sideways at 320px.
 
@@ -200,6 +208,9 @@ No page scrolls sideways at 320px.
 | Contact form, empty submit | Browser asks for the missing fields | |
 | Contact form, invalid email | Browser asks for a valid email | |
 | Contact form, real message | Email arrives and success.html is shown | |
+| Free-class sign-up (home page), real email | Email arrives and thank-you.html is shown | |
+| Footer sign-up (each page, from 992px), real email | Email arrives and thank-you.html is shown | |
+| Sign-up forms, empty or invalid email | Browser asks for a valid email | |
 | Book now / Book a class | Booking page opens in a new tab | |
 | Keyboard only | Every link and button can be reached and focus is visible | |
 
