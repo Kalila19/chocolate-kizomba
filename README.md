@@ -56,7 +56,7 @@ Chocolate Kizomba is a weekly Kizomba class and social night every Tuesday at Be
 ### Home (`index.html`)
 
 - Hero image with the headline "London's most soulful Kizomba night" and a **Book now!** button
-- Photo carousel next to a sign-up form for a free class
+- Photo carousel of 20 landscape photos from past nights, next to a sign-up form for a free class. Only landscape photos are used so the carousel doesn't jump in height between slides, and each slide loads only when it's needed (`loading="lazy"`)
 - "Why dance with us?" cards: levels for everyone, community, music and confidence
 
 ### Classes (`classes.html`)
@@ -214,6 +214,7 @@ No page scrolls sideways at 320px.
 | Navbar links | Each link opens the right page | Pass (every local link and image checked with a script) |
 | Placeholder links (About us, Workshops, Events, Gallery) | Open the under construction page | |
 | Mobile menu | Opens, dropdown works, closes | |
+| Home page carousel | All 20 slides show sharp photos, with no blank slides or noticeable jumps in height | |
 | Footer quick links | Open the right section of the Classes page | Pass (`#faqs`, `#instructors` and `#classes` all exist) |
 | Social links | Open in a new tab | WhatsApp, Instagram, TikTok, Google Maps and Afromoya all respond. Facebook blocks automated checks, so test it by hand |
 | Contact form, empty submit | Browser asks for the missing fields | |
@@ -244,7 +245,7 @@ Chrome, Firefox, Safari (including iOS) and Edge.
 | Images used backslashes in their paths, which break on web servers | Changed every path to forward slashes |
 | Large images (up to 6MB each) slowed the pages | Resized and compressed every image (106MB down to about 8MB) |
 | JPG photos and PNG logos were larger than they needed to be | Converted them to WebP (the three logos went from 295KB to 121KB) |
-| Some photos looked blurry after the WebP conversion (carousel images 1, 9, 10 and 22, the classes hero, the success and thank-you photo, two card images and the flyer). They had been saved at as little as 270px wide, so the browser was stretching them | Rebuilt them as WebP from the full-size originals (1080px wide, and 1240px for the flyer) |
+| Some photos looked blurry after the WebP conversion (carousel images 1, 9, 10 and 22, the classes hero, the success and thank-you photo, two card images and the flyer). They had been saved at as little as 270px wide, so the browser was stretching them | Rebuilt them as WebP from the full-size originals (1080px wide, and 1240px for the flyer). Carousel images 4, 5, 8, 13 and 14 were rebuilt the same way before being added to the carousel |
 
 ---
 
