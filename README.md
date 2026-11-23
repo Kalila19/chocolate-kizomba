@@ -274,14 +274,14 @@ Three columns on desktop. On smaller screens the subscribe form is hidden and th
 
 ![Contact Us page responsive mockup](assets/readme/contact-us-responsive.png)
 
-### Message sent (`success.html`)
+### Success page - Message sent (`success.html`)
 
 - Thank-you page shown after the contact form is submitted, with a link back to the home page
 - Hidden from search engines with `noindex`
 
 ![Message sent page responsive mockup](assets/readme/success-responsive.png)
 
-### Signed up (`thank-you.html`)
+### Thank you page - Signed up (`thank-you.html`)
 
 - Thank-you page shown after someone joins the mailing list, from either the free-class sign-up on the home page or the footer sign-up on any page
 - Confirms the free class is on its way, with a link back to the home page
