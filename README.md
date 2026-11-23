@@ -126,6 +126,8 @@ Both are loaded from Google Fonts.
 
 Photos are from Chocolate Kizomba nights at Be At One. They were resized (maximum 1920px wide) and compressed so pages load quickly.
 
+All photos and logos are saved as WebP, a modern image format that gives smaller files than JPG and PNG at the same visual quality. The logos keep their transparent backgrounds. The favicons stay as PNG because browsers and phones expect that format.
+
 ### Layout
 
 The site is built mobile-first with Bootstrap's grid, with layout changes at 768px, 992px and 1200px. For example, the "Why dance with us?" cards show one per row on phones, two on tablets and four on desktops.
@@ -232,6 +234,7 @@ Chrome, Firefox, Safari (including iOS) and Edge.
 | The `h3+.h5` selector didn't style headings | Changed it to `h3, .h5` |
 | Images used backslashes in their paths, which break on web servers | Changed every path to forward slashes |
 | Large images (up to 6MB each) slowed the pages | Resized and compressed every image (106MB down to about 8MB) |
+| JPG photos and PNG logos were larger than they needed to be | Converted them to WebP (the three logos went from 295KB to 121KB) |
 
 ---
 
