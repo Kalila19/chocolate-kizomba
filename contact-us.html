@@ -131,10 +131,15 @@
 
     <header id="header" class="container-fluid p-0">
       <div class="hero hero-contact">
+
+        <!-- fetchpriority + width and height sets the image to its real size which stops the layout jumping as the image loads; "cumulative layout shift" -->
         <img
           src="assets/images/resized/image47.webp"
           alt="Couples dancing Kizomba under blue and purple lights"
           class="hero-image"
+          width="960"
+          height="540"
+          fetchpriority="high"
         >
         <div class="hero-overlay"></div>
         <div class="hero-content">
