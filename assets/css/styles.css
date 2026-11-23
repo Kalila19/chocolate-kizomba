@@ -16,12 +16,12 @@
 /* fade transition between each page */
 
 .fade-in {
-  animation: fadeIn 0.4s ease-in forwards;
+  animation: fadeIn 0.2s ease-in forwards;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 0.4s ease-out;
+  transition: opacity 0.2s ease-out;
 }
 
 @keyframes fadeIn {
